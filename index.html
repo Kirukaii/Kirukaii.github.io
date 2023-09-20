@@ -5,10 +5,17 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Website 1.0</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!-- My own CSS -->
         <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+
+        <!-- some shit for fonts? idk-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Lato font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <!-- Import jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>     
 <body>
     <header>
@@ -29,7 +36,6 @@
     </header>
 
     <article class="container">
-
         <section class="content">
             <span class="welcome">
                 Hi, I'm Kamil
@@ -43,22 +49,52 @@
                 </span> 
             </span>
             <aside>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="circle"></button>
+                <button class="circle"></button>
+                <button class="circle"></button>
+                <button class="circle"></button>
+
+                <script>
+                    console.log($('.circle').css('background-color'));
+
+                    $('button').on('click', function() {
+
+                        if ($(this).hasClass("circle")) {
+                            
+                            $('.circle').css('background', 'rgba(49, 50, 58, 0.5)')    
+                            
+                            $(this).css('background', 'rgba(255, 255, 255, 0.5)');
+                            
+                        }
+                            
+                        
+                            
+                    });
+                    
+                    /*    background: rgba(255, 255, 255, 0.5);*/
+                </script>
+
+
             </aside>
+
+
+            <script>
+
+            </script>
+                
+
         </section>
+
         <section class="slider">
             <button> < </button>Slider<button> > </button>
         </section>
-    </article>
 
+    </article>
+    
 
     <footer>
         Copyright © Kirukai 2023
     </footer>
-
 
 </body>
 </html>

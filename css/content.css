@@ -6,6 +6,7 @@ section.content{
     font-size: 70px;
     text-shadow: 5px 5px 10px black;
     align-items: center;
+    justify-content: center;
 }
 section.content > .welcome {
     display: flex;
@@ -17,7 +18,6 @@ section.content > .welcome {
     height: 50%;
     box-shadow: 5px 5px 30px black;
     border-radius: 10px;
-    margin-left: 300px;
 }
 section.content > .welcome > .role{
     display: inline-block;
@@ -59,6 +59,9 @@ section.content > aside{
     height: 50%;
     border-radius: 20px;
 }
+
+/*CSS for circle buttons on the side*/
+
 section.content > aside > button{
     width: 60px;
     height: 60px;
@@ -66,4 +69,16 @@ section.content > aside > button{
     border-radius: 50%;
     background: rgba(49, 50, 58, 0.5);
     box-shadow: 5px 5px 20px black;
+    outline: none;
 } 
+section.content > aside > button:hover{
+    background: rgba(112, 114, 133, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+} 
+/* section.content > aside > button:focus{
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+} */
+
+/*CSS for Radio buttons on the side, that replace the normal buttons*/

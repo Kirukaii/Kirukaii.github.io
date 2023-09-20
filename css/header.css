@@ -1,7 +1,6 @@
 header > ul{
     display: flex;
-    /* background-image: linear-gradient(rgba(43, 43, 43, 0.5)50%, rgba(54, 54, 54, 0.5)50%); */
-    background-color: rgba(29, 29, 29, 0.3);
+    background: rgba(29, 29, 29, 0.3);
     list-style-type: none;
     color: white;
     font-size: 30px;
