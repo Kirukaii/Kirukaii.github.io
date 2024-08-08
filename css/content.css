@@ -15,7 +15,7 @@ section.content > .welcome {
     align-items: center;
     background: rgba(49, 50, 58, 0.7);
     width: 50%;
-    height: 50%;
+    height: 70%;
     box-shadow: 5px 5px 30px black;
     border-radius: 10px;
 }

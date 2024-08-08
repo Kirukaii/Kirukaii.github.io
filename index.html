@@ -78,13 +78,31 @@
             </aside>
 
 
-            <script>
-
-            </script>
                 
 
         </section>
+        <section class="technologies ">
+            <span class="box hidden">C#</span>
+            <span class="box hidden">Git</span>
+            <span class="box hidden">Unity</span>
 
+            <script>
+                const hiddenElements = document.querySelectorAll('.hidden');
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        console.log(entry);
+                        if(entry.isIntersecting) {
+                            entry.target.classList.add('show');
+                        } else {
+                            entry.target.classList.remove('show');
+                        }
+                    });
+                });
+
+                hiddenElements.forEach((el) => observer.observe(el));
+            </script>
+        </section>
         <section class="slider">
             <button> < </button>Slider<button> > </button>
         </section>
