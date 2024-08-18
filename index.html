@@ -7,6 +7,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <!-- My own CSS -->
         <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+        <script type="text/javascript" src="js/observer.js"></script>
 
         <!-- some shit for fonts? idk-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,12 +50,19 @@
                 </span> 
             </span>
             <aside>
-                <button class="circle"></button>
-                <button class="circle"></button>
-                <button class="circle"></button>
-                <button class="circle"></button>
+                <button class="circleHidden"><span class="text">Germany</span></button>
+                <button class="circleHidden"><span class="text">19 Years</span></button>
+                <button class="circleHidden"><span class="text">Student</span></button>
+                <button class="circleHidden"><span class="text">Polish</span></button>
 
                 <script>
+
+                    changeClass(".circleHidden", 'circleShow');
+
+
+
+
+
                     console.log($('.circle').css('background-color'));
 
                     $('button').on('click', function() {
@@ -83,24 +91,13 @@
         </section>
         <section class="technologies ">
             <span class="box hidden">C#</span>
+            <span class="box hidden">Blazor</span>
             <span class="box hidden">Git</span>
             <span class="box hidden">Unity</span>
 
             <script>
-                const hiddenElements = document.querySelectorAll('.hidden');
+                changeClass('.hidden','show');
 
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach((entry) => {
-                        console.log(entry);
-                        if(entry.isIntersecting) {
-                            entry.target.classList.add('show');
-                        } else {
-                            entry.target.classList.remove('show');
-                        }
-                    });
-                });
-
-                hiddenElements.forEach((el) => observer.observe(el));
             </script>
         </section>
         <section class="slider">

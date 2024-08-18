@@ -59,17 +59,31 @@ section.content > aside{
     height: 50%;
     border-radius: 20px;
 }
-
+.text{
+    color: white;
+    font-size: 20px;
+    opacity: 0; /*Startowo tekst nie widoczny (jeszcze przed zmieną kropki na pasek)*/
+    transition: opacity 0.3s ease; /* Przejście dla widoczności tekstu - tekst pokazuje się w 0.3s */
+    transition-delay: 0.5s; /* Opóźnienie dla przejścia, przejście zacznie się pojawiać po czasie 0.3s */
+    white-space: nowrap; 
+}
 /*CSS for circle buttons on the side*/
 
 section.content > aside > button{
     width: 60px;
     height: 60px;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     background: rgba(49, 50, 58, 0.5);
     box-shadow: 5px 5px 20px black;
-    outline: none;
+    transition: 1s;  
+}
+.circleShow{
+    width: 200px !important;
+
+} 
+.circleShow > .text{
+    opacity: 1;
 } 
 section.content > aside > button:hover{
     background: rgba(112, 114, 133, 0.5);

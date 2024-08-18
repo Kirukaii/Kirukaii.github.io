@@ -14,8 +14,8 @@ section.technologies > .box{
     justify-content: center;
     align-items: center;
     background: rgba(49, 50, 58, 1);
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 25%;
     box-shadow: 5px 5px 30px black;
     border-radius: 5px;
     margin-right: 15px;
@@ -25,4 +25,7 @@ section.technologies > .box{
 }
 .box:nth-child(3){
     transition-delay: 400ms;
+}
+.box:nth-child(3){
+    transition-delay: 600ms;
 }
