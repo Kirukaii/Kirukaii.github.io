@@ -1,37 +1,57 @@
 header > ul{
     display: flex;
-    background: rgba(29, 29, 29, 0.3);
     list-style-type: none;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
-    justify-content:center;
-    width: 70%;
-    margin: auto;
-    border-radius: 7px;
-    margin-top: 2%;
+    flex-direction:column;
     text-align: center;
-    box-shadow: 5px 5px 30px black;
-    text-shadow: 5px 5px 30px black;
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 100%;
 }
 header > ul > li{
-    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+    width: 70px;
+    height: 50px;
     padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: relative;
+
+    transition: 0.5s;
+}
+header > ul > li:not(:hover) > i{
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+    transition-delay: 0.2s; 
+
+}
+header > ul > li > p{
+    position: absolute;
+    opacity: 0;
+
 }
 header > ul > li:hover{
     background-color: rgba(83, 83, 83, 0.5);
-    color: rgb(26, 26, 26);
     text-shadow: none;
     cursor: pointer;
-    transition: 0.3s;
+    width: 300px;
+    transition: 0.5s;
+    
+}
+header > ul > li:hover > i{
+    opacity: 0;
+}
+header > ul > li:hover > p{
+    opacity: 1;
+    position: static;
+    transition: opacity 0.3s ease; 
+    transition-delay: 0.2s; 
+
 }
 header > ul > li:active{
     background-color: rgba(82, 82, 82, 0.3);
 }
-header > ul > li:first-child{
-    border-radius: 7px 0 0 7px;
-}
-header > ul > li:last-child{
-    border-radius: 0 7px 7px 0;
-    border-right: none;
-}
+
