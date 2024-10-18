@@ -47,19 +47,17 @@
 
     <article class="container">
         <section class="content">
-            <span class="welcome">
-                Hi, I'm Kamil
-                <span class="role">Software Developer</span> 
-                <span class="description">
-                    Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                </span> 
-                <span class="social">
-                    <button>Contact me</button>
-                    <button>News</button>
-                </span> 
+            <span class="contentBox">
+                <span class="welcome">
+                        Hi, I'm Kamil
+                    <span class="role">Software Developer</span> 
+                    <span class="description">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    </span>
+                </span>
+                <button onclick=" window.open('file:cv.pdf')"><i class="fa-solid fa-file"></i></button>
             </span>
             <aside>
-                <button class="circleHidden"><span class="text">Germany</span></button>
                 <button class="circleHidden"><span class="text">Germany</span></button>
                 <button class="circleHidden"><span class="text">19 Years</span></button>
                 <button class="circleHidden"><span class="text">Student</span></button>
@@ -87,20 +85,53 @@
             <button class=""><i class="fa-brands fa-x-twitter"></i></button>
             <button class=""><i class="fa-brands fa-github"></i></button>
         </aside>
-        <section class="technologies ">
-            <span class="box hidden">C#</span>
-            <span class="box hidden">Blazor</span>
-            <span class="box hidden">Git</span>
-            <span class="box hidden">Unity</span>
+        <section class="technologies">
+            <span class="box hiddenTech">C#</span>
+            <span class="box hiddenTech">Blazor</span>
+            <span class="box hiddenTech">Git</span>
+            <span class="box hiddenTech">Unity</span>
 
             <script>
-                changeClass('.hidden','show');
+                changeClass('.hiddenTech','showTech');
 
             </script>
         </section>
         <section class="slider">
-            <button> < </button>Slider<button> > </button>
+            <span class="content">
+                <span class="slide">
+                    <img src="sliderContent/chess.png" alt="chess">
+                </span>
+                <span class="slide">
+                    <video width="1000" height="600" controls>
+                        <source src="sliderContent/game.mp4" type="video/mp4">
+                    </video>
+                </span>
+            </span>
+            <span class="arrows">
+                <button onclick="showSlide(0)">1</button>
+                <button onclick="showSlide(1)">2</button>
+                <!-- <button onclick="showSlide(2)">3</button>
+                <button onclick="showSlide(3)">4</button>
+                <button onclick="showSlide(4)">5</button> -->
+                <script>
+                    function showSlide(nr){
+                        
+                        const slides = document.getElementsByClassName("slide");
+                        
+                        for (let index = 0; index < slides.length; index++) {
+                            slides[index].style.opacity = 0;
+                        }
+                        slides[nr].style.opacity = 1;
+
+                    }
+                </script>
+            </span>
         </section>
+
+        <section class="experience">
+            
+        </section>
+
         <footer>
             Copyright © Kirukai 2023
         </footer>

@@ -2,12 +2,45 @@ section.slider{
     display: flex;
     background: rgba(41, 44, 46, 0.9);
     width: 100%;
-    height: 40%;
+    height: 700px;
     color: white;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    margin-top: 300px;
 }
-section.slider > button{
-    background-color: aqua;
+section.slider > .arrows {
+    margin-bottom: 1%;
+}
+section.slider > .arrows > button{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 100%;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+section.slider > .arrows > button:hover{
+    background-color: rgba(83, 83, 83, 0.5);
+    cursor: pointer;
+}
+section.slider > .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+section.slider > .content > .slide{
+    opacity: 0;
+    position: absolute;
+}
+section.slider > .content > .slide:first-child{
+    opacity: 1;
+}
+
+section.slider > .content > .slide > img{
+    width: 500px;
+    height: 500px;
 }

@@ -8,20 +8,20 @@ header > ul{
     text-align: center;
     margin-top: 1%;
     margin-left: 1%;
-    height: 100%;
-    position: fixed;
+    height: 400px;
+    position: fixed;   
+    z-index: 10;
 }
 header > ul > li{
-
     background: rgba(0, 0, 0, 0.5);
     width: 65px;
     height: 45px;
     padding: 10px;
     border-radius: 10px;
     margin-top: 30px;
-    position: relative;
     font-size: 35px;
     transition: 0.5s;
+
 }
 header > ul > li:not(:hover) > i{
     opacity: 1;
