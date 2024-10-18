@@ -2,6 +2,7 @@
 @import "slider.css";
 @import "content.css";
 @import "technologies.css";
+@import "social.css";
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +29,7 @@ article.container{
     width: 100%;
     height: 100%;
     justify-content: space-between;
+
 }
 footer{
     display: flex;

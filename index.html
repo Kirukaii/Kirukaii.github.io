@@ -60,6 +60,7 @@
             </span>
             <aside>
                 <button class="circleHidden"><span class="text">Germany</span></button>
+                <button class="circleHidden"><span class="text">Germany</span></button>
                 <button class="circleHidden"><span class="text">19 Years</span></button>
                 <button class="circleHidden"><span class="text">Student</span></button>
                 <button class="circleHidden"><span class="text">Polish</span></button>
@@ -67,13 +68,7 @@
                 <script>
 
                     changeClass(".circleHidden", 'circleShow');
-
-
-
-
-
                     console.log($('.circle').css('background-color'));
-
                     $('button').on('click', function() {
 
                         if ($(this).hasClass("circle")) {
@@ -82,22 +77,16 @@
                             
                             $(this).css('background', 'rgba(255, 255, 255, 0.5)');
                             
-                        }
-                            
-                        
-                            
+                        }                                         
                     });
-                    
-                    /*    background: rgba(255, 255, 255, 0.5);*/
                 </script>
-
-
             </aside>
-
-
-                
-
         </section>
+        <aside>
+            <button class=""><i class="fa-brands fa-discord"></i></button>
+            <button class=""><i class="fa-brands fa-x-twitter"></i></button>
+            <button class=""><i class="fa-brands fa-github"></i></button>
+        </aside>
         <section class="technologies ">
             <span class="box hidden">C#</span>
             <span class="box hidden">Blazor</span>

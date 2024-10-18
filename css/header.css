@@ -1,25 +1,26 @@
 header > ul{
     display: flex;
-    list-style-type: none;
+    list-style-type: none;  
     color: white;
     font-size: 40px;
     font-weight: bold;
     flex-direction:column;
     text-align: center;
-    margin-top: 2%;
-    margin-left: 2%;
+    margin-top: 1%;
+    margin-left: 1%;
     height: 100%;
+    position: fixed;
 }
 header > ul > li{
 
     background: rgba(0, 0, 0, 0.5);
-    width: 70px;
-    height: 50px;
+    width: 65px;
+    height: 45px;
     padding: 10px;
     border-radius: 10px;
     margin-top: 30px;
     position: relative;
-
+    font-size: 35px;
     transition: 0.5s;
 }
 header > ul > li:not(:hover) > i{
@@ -37,9 +38,8 @@ header > ul > li:hover{
     background-color: rgba(83, 83, 83, 0.5);
     text-shadow: none;
     cursor: pointer;
-    width: 300px;
+    width: 250px;
     transition: 0.5s;
-    
 }
 header > ul > li:hover > i{
     opacity: 0;

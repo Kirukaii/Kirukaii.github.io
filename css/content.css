@@ -7,14 +7,14 @@ section.content{
     text-shadow: 5px 5px 10px black;
     align-items: center;
     justify-content: center;
-    align-self: ;
+    
 }
 section.content > .welcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(49, 50, 58, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     width: 50%;
     height: 70%;
     box-shadow: 5px 5px 30px black;
@@ -59,8 +59,10 @@ section.content > aside{
     width: 7%;
     height: 50%;
     border-radius: 20px;
+    
 }
 .text{
+    
     color: white;
     font-size: 20px;
     opacity: 0; /*Startowo tekst nie widoczny (jeszcze przed zmieną kropki na pasek)*/
@@ -75,7 +77,7 @@ section.content > aside > button{
     height: 60px;
     border: none;
     border-radius: 50px;
-    background: rgba(61, 61, 61, 0.6);
+    background: rgba(0, 0, 0, 0.5);
 
     box-shadow: 5px 5px 20px black;
     transition: 1s;  
