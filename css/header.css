@@ -1,7 +1,6 @@
 header > ul{
     display: flex;
     list-style-type: none;  
-    color: white;
     font-size: 40px;
     font-weight: bold;
     flex-direction:column;
@@ -12,7 +11,11 @@ header > ul{
     position: fixed;   
     z-index: 10;
 }
-header > ul > li{
+header > ul > a {
+    text-decoration: none;
+}
+header > ul > a > li{
+    color: white;
     background: rgba(0, 0, 0, 0.5);
     width: 65px;
     height: 45px;
@@ -23,35 +26,35 @@ header > ul > li{
     transition: 0.5s;
 
 }
-header > ul > li:not(:hover) > i{
+header > ul > a > li:not(:hover) > i{
     opacity: 1;
     transition: opacity 0.3s ease; 
     transition-delay: 0.2s; 
 
 }
-header > ul > li > p{
+header > ul > a > li > p{
     position: absolute;
     opacity: 0;
 
 }
-header > ul > li:hover{
+header > ul > a > li:hover{
     background-color: rgba(83, 83, 83, 0.5);
     text-shadow: none;
     cursor: pointer;
     width: 250px;
     transition: 0.5s;
 }
-header > ul > li:hover > i{
+header > ul > a > li:hover > i{
     opacity: 0;
 }
-header > ul > li:hover > p{
+header > ul > a > li:hover > p{
     opacity: 1;
     position: static;
     transition: opacity 0.3s ease; 
     transition-delay: 0.2s; 
 
 }
-header > ul > li:active{
+header > ul > a > li:active{
     background-color: rgba(82, 82, 82, 0.3);
 }
 

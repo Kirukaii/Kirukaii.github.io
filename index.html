@@ -22,31 +22,44 @@
 <body>
     <header>
         <ul>
-            <li>
-                <p>Home</p>
-                <i class="fa-solid fa-house"></i>
+            <a href="#section1" >
+                <li>                
+                    <p>Home</p>
+                    <i class="fa-solid fa-house"></i>
+    
+                </li>
+            </a>
+            <a href="#section2" >
+                <li>
+                    <p>Technologies</p>
+                    <i class="fa-solid fa-microchip"></i>
+    
+                </li>
+            </a>
 
-            </li>
-            <li>
-                <p>Technologies</p>
-                <i class="fa-solid fa-microchip"></i>
+            <a href="#section3" >
+                <li>
+                    <p>Projects</p>
+                    <i class="fa-solid fa-diagram-project"></i>
+    
+                </li>
+            </a>
 
-            </li>
-            <li>
-                <p>Projects</p>
-                <i class="fa-solid fa-diagram-project"></i>
 
-            </li>
-            <li>
-                <p>Experience</p>
-                <i class="fa-solid fa-building"></i>
+            <a href="#section4" >
+                <li>
+                    <p>Experience</p>
+                    <i class="fa-solid fa-building"></i>
+    
+                </li>
+            </a>
 
-            </li>
+
         </ul>
     </header>
 
     <article class="container">
-        <section class="content">
+        <section class="content " id="section1">
             <span class="contentBox">
                 <span class="welcome">
                         Hi, I'm Kamil
@@ -85,7 +98,7 @@
             <button class=""><i class="fa-brands fa-x-twitter"></i></button>
             <button class=""><i class="fa-brands fa-github"></i></button>
         </aside>
-        <section class="technologies">
+        <section class="technologies" id="section2">
             <span class="box hiddenTech">C#</span>
             <span class="box hiddenTech">Blazor</span>
             <span class="box hiddenTech">Git</span>
@@ -96,7 +109,7 @@
 
             </script>
         </section>
-        <section class="slider">
+        <section class="slider" id="section3">
             <span class="content">
                 <span class="slide">
                     <img  width="700" height="550" src="sliderContent/chess.png" alt="chess">
@@ -115,9 +128,7 @@
                 <button onclick="showSlide(4)">5</button> -->
                 <script>
                     function showSlide(nr){
-                        
                         const slides = document.getElementsByClassName("slide");
-                        
                         for (let index = 0; index < slides.length; index++) {
                             slides[index].style.opacity = 0;
                         }
@@ -128,7 +139,7 @@
             </span>
         </section>
 
-        <section class="experience">
+        <section class="experience" id="section4">
             
         </section>
 
